@@ -1,30 +1,33 @@
-Jeopardy!
-
+# Jeopardy!
+ 
 A browser-based Jeopardy trivia game built with plain HTML, CSS, and JavaScript.
-
-How to play
-Click start! to begin. The game picks 6 random categories and loads 5 questions for each.
-Pick any tile on the board ($100–$500).
-Choose an answer from the multiple-choice options.
-Correct answers add the tile's value to your score.
-Wrong answers subtract it.
-The game ends once every tile has been played. Then you can play again or exit.
-
+ 
+## How to play
+ 
+1. Click **start!** to begin. The game picks 6 random categories and loads 5 questions for each.
+2. Pick any tile on the board ($100–$500).
+3. Choose an answer from the multiple-choice options.
+   - Correct answers **add** the tile's value to your score.
+   - Wrong answers **subtract** it.
+4. The game ends once every tile has been played. Then you can play again or exit.
 Categories are drawn from: Animals, Computers, Comics, Cartoons, Anime, Music, History, Sports, Science, and Geography.
-
-Running it
-
+ 
+## Running it
+ 
 No installs, packages, or build steps needed.
-
-sh
+ 
+```sh
 git clone https://github.com/y1ji3/Jeopardy.git
 cd Jeopardy
-
-Then open index.html in your browser.
-
-Note: You'll need an internet connection, since questions are fetched live from the Open Trivia Database. Loading takes about 30 seconds because the game waits a few seconds between categories to stay within the API's rate limit.
-
-Project structure
+```
+ 
+Then open `index.html` in your browser.
+ 
+> **Note:** You'll need an internet connection, since questions are fetched live from the [Open Trivia Database](https://opentdb.com). Loading takes about 30 seconds because the game waits a few seconds between categories to stay within the API's rate limit.
+ 
+## Project structure
+ 
+```
 ├── index.html            # Entry point
 ├── assets/
 │   ├── style.css         # Styles
@@ -38,6 +41,9 @@ Project structure
         ├── board.js      # Question board
         ├── answer.js     # Question / answer popup
         └── end.js        # Game over screen
-Credits
-
-Trivia questions provided by the Open Trivia Database (CC BY-SA 4.0).
+```
+ 
+## Credits
+ 
+Trivia questions provided by the [Open Trivia Database](https://opentdb.com) (CC BY-SA 4.0).
+ 
